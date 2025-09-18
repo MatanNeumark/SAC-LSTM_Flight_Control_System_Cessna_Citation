@@ -28,12 +28,17 @@ The RL-based FCS is designed for the Cessna Citation II, TU Delft's research air
 Image by Andre Pronk
 
 
-As shown in the control loop, the FCS controls the pitch angle of the aircraft.
+As shown in the control loop, the agent is trained to control the aircraft's pitch angle.
+To maintain the Markovian property when facing delays (in both the action and observation), the agent must be informed of previous actions.
+With that, the LSTM layer can learn to interpret which actions lead to which states.
 <img width="1534" height="312" alt="theta_control_loop_RL_v2" src="https://github.com/user-attachments/assets/44504df8-743d-489f-b276-143c0f8ec832" />
 
 
 The schematic below illustrates the flow of information between the various components of the SAC-LSTM agent and the environment.
 <img width="2560" height="828" alt="SAC_architecture_POMDP_v5" src="https://github.com/user-attachments/assets/ffb3649f-e59b-4519-852e-9a0865576401" />
+
+Summary of results and interpretation of the test case (TC) designation
+<img width="1310" height="1021" alt="image" src="https://github.com/user-attachments/assets/c65b2109-5c7c-4a02-89e3-67852c3317d6" />
 
 
 The SAC algorithm was developed in MATLAB to maintain compatibility with existing Simulink models and to allow for C code generation directly in MATLAB for future use in the aircraft's avionics.
