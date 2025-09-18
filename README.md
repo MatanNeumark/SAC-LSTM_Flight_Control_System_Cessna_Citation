@@ -2,7 +2,7 @@ This repository contains the source code and results of my MSc thesis at the Aer
 The thesis report, which contains a scientific report showcasing the main results, along with theoretical background and a preliminary analysis, can be found here:
 https://repository.tudelft.nl/record/uuid:f68c711d-29f2-4c92-915b-621fa9a66026
 
-<img width="898*0.6" height="1274*0.6" alt="image" src="https://github.com/user-attachments/assets/f92e629b-78e6-4988-9f25-7121400d2a73" />
+<img width="718" height="1018" alt="image" src="https://github.com/user-attachments/assets/45e8d44b-aa0a-48d4-ac34-a72cf8c2f11c" />
 
 
 Abstract:
@@ -23,16 +23,17 @@ linear controller.
 
 
 The RL-based FCS is designed for the Cessna Citation II, TU Delft's research aircraft:
-<img width="4550" height="1309" alt="PH_LAB_Andre_Pronk_no_background" src="https://github.com/user-attachments/assets/6cbe4430-4239-4257-a9ca-78d918dc1375" />
+<img width="4550" height="1309" alt="PH_LAB_Andre_Pronk_no_background" src="https://github.com/user-attachments/assets/88c23bc0-1eeb-45ef-b52a-90588df31be1" />
 
 Image by Andre Pronk
 
 
 As shown in the control loop, the FCS controls the pitch angle of the aircraft.
-<img width="1534" height="312" alt="theta_control_loop_RL_v2" src="https://github.com/user-attachments/assets/81f163a8-6bec-44a4-8c8f-70030b158de0" />
+<img width="1534" height="312" alt="theta_control_loop_RL_v2" src="https://github.com/user-attachments/assets/44504df8-743d-489f-b276-143c0f8ec832" />
+
 
 The schematic below illustrates the flow of information between the various components of the SAC-LSTM agent and the environment.
-<img width="2560" height="828" alt="SAC_architecture_POMDP_v5" src="https://github.com/user-attachments/assets/6e00b9c8-15f5-4069-9cd2-6cc275cfd3ef" />
+<img width="2560" height="828" alt="SAC_architecture_POMDP_v5" src="https://github.com/user-attachments/assets/ffb3649f-e59b-4519-852e-9a0865576401" />
 
 
 The SAC algorithm was developed in MATLAB to maintain compatibility with existing Simulink models and to allow for C code generation directly in MATLAB for future use in the aircraft's avionics.
